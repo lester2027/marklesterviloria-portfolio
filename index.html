@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This website is for personal use only and not intended for commercial purposes."
+    />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Lester Viloria" />
+    <meta property="og:title" content="My Portfolio" />
+    <meta property="og:description" content="I am a full stack developer" />
+    <meta property="og:type" content="website" />
+    <title>Mark Lester Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!===========================
+             HEADER SECTION 
+    ============================>
+    <header>
+      <div class="circle-animation"></div>
+
+      <div class="header-container">
+        <a href="#home">
+          <img src="logo.png" alt="logo" class="nav-item" />
+        </a>
+
+        <nav class="nav" id="nav-menu">
+          <ul>
+            <li><a href="#aboutme" class="nav-item">About me</a></li>
+            <li><a href="#projects" class="nav-item">Projects</a></li>
+            <li><a href="#skills" class="nav-item">Skills</a></li>
+            <li><a href="#contact" class="nav-item">Contact</a></li>
+          </ul>
+        </nav>
+
+        <button class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!===========================
+             HERO SECTION 
+      ============================>
+      <section id="home">
+        <div class="main-container">
+          <article class="left-item">
+            <h2 class="animate fade-left delay-1">Hello, I'm</h2>
+            <p class="animate fade-left delay-2">
+              Lester <br />
+              Viloria
+            </p>
+            <div class="socials animate fade-left delay-3">
+              <a
+                href="https://www.linkedin.com/in/mark-lester-viloria-67ba541bb/"
+                target="_blank"
+                title="LinkedIn"
+                class="socials-icon"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a
+                href="https://github.com/lester2027"
+                target="_blank"
+                title="GitHub"
+                class="socials-icon"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a
+                href="https://gitlab.com/lester2027"
+                target="_blank"
+                title="GitLab"
+                class="socials-icon"
+                ><i class="fa-brands fa-gitlab"></i
+              ></a>
+              <a
+                href="mailto:marklesterviloria@gmail.com"
+                target="_blank"
+                title="Gmail"
+                class="socials-icon"
+                ><i class="fa-solid fa-envelope"></i
+              ></a>
+            </div>
+          </article>
+
+          <div class="home-circle-animation"></div>
+
+          <div class="image-box animate zoom-in delay-3">
+            <img src="profile3.png" alt="profile" class="profile-pic" />
+          </div>
+
+          <article class="right-item">
+            <h2 class="animate fade-right delay-1">Creative</h2>
+            <p class="designer animate fade-right delay-2">Designer</p>
+            <p class="developer animate fade-right delay-3">& Developer</p>
+          </article>
+
+          <a
+            href="resume.pdf"
+            class="resume-btn animate fade-up delay-5"
+            target="_blank"
+            >Resume<i class="fa-regular fa-circle-down"></i
+          ></a>
+        </div>
+      </section>
+
+      <!===========================
+             ABOUT ME SECTION 
+      ============================>
+      <section class="about-me-container" id="aboutme">
+        <div class="about-me-img animate fade-left delay-1">
+          <img src="profile2.png" alt="profile-picture" />
+        </div>
+
+        <div class="about-me-circle-animation"></div>
+
+        <div class="second-circle-animation"></div>
+
+        <div class="about-me-text-content">
+          <h2 class="animate fade-right delay-2">Building efficient,</h2>
+          <h3 class="animate fade-right delay-3">User-focused solutions</h3>
+          <p class="multicolumn animate fade-up delay-4">
+            I didn't take the traditional path. Without a CS degree, I taught
+            myself web development and software development through late nights,
+            trial and error, and a lot of
+            <span class="highlight">patience</span> after long work days. That
+            <span class="highlight">grind</span> shaped how I think — I don't
+            just write code, I <span class="highlight">solve</span> real
+            problems. I <span class="highlight">build</span> across the full
+            stack, from
+            <span class="highlight"
+              >clean intuitive interfaces to reliable</span
+            >
+            backend systems, because I believe great software has to work well
+            on every level.
+          </p>
+        </div>
+
+        <div class="about-me-resume-btn animate fade-up delay-5">
+          <a href="resume.pdf" target="_blank">
+            Resume<i class="fa-regular fa-circle-down"></i>
+          </a>
+        </div>
+      </section>
+
+      <!===========================
+             PROJECTS SECTION 
+      ============================>
+      <section class="projects section" id="projects">
+        <h2 class="section-title animate fade-up delay-1">Projects</h2>
+
+        <div class="projects-container container grid">
+          <div class="projects-swiper swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <article class="projects-card animate zoom-in delay-1">
+                  <div class="blob"></div>
+
+                  <div class="projects-number">
+                    <h1>01</h1>
+                    <h3>Web</h3>
+                  </div>
+
+                  <div class="projects-data">
+                    <h1 class="projects-title">Dashboard UI</h1>
+                    <p class="projects-subtitle">Stack used</p>
+                    <div class="projects-stack">
+                      <i class="fa-brands fa-html5 html"></i>
+                      <i class="fa-brands fa-css3-alt css"></i>
+                      <i class="fa-brands fa-square-js js"></i>
+                    </div>
+                  </div>
+
+                  <div class="projects-image">
+                    <img
+                      src="dashboardui.jpg"
+                      alt="dashbpard-ui"
+                      class="projects-img"
+                    />
+                    <a href="#" target="_blank" class="projects-button">
+                      <i class="fa-solid fa-arrow-trend-up"></i>
+                    </a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="swiper-slide">
+                <article class="projects-card animate zoom-in delay-2">
+                  <div class="blob"></div>
+
+                  <div class="projects-number">
+                    <h1>02</h1>
+                    <h3>Web</h3>
+                  </div>
+
+                  <div class="projects-data">
+                    <h1 class="projects-title">Portfolio Website</h1>
+                    <p class="projects-subtitle">Stack used</p>
+                    <div class="projects-stack">
+                      <i class="fa-brands fa-html5 html"></i>
+                      <i class="fa-brands fa-css3-alt css"></i>
+                      <i class="fa-brands fa-square-js js"></i>
+                    </div>
+                  </div>
+
+                  <div class="projects-image">
+                    <img
+                      src="project-img.png"
+                      alt="dashbpard-ui"
+                      class="projects-img"
+                    />
+                    <a href="#" target="_blank" class="projects-button">
+                      <i class="fa-solid fa-arrow-trend-up"></i>
+                    </a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="swiper-slide">
+                <article class="projects-card animate zoom-in delay-3">
+                  <div class="blob"></div>
+
+                  <div class="projects-number">
+                    <h1>03</h1>
+                    <h3>Web</h3>
+                  </div>
+
+                  <div class="projects-data">
+                    <h1 class="projects-title">Login UI</h1>
+                    <p class="projects-subtitle">Stack used</p>
+                    <div class="projects-stack">
+                      <i class="fa-brands fa-html5 html"></i>
+                      <i class="fa-brands fa-css3-alt css"></i>
+                    </div>
+                  </div>
+
+                  <div class="projects-image">
+                    <img
+                      src="project-img2.png"
+                      alt="dashbpard-ui"
+                      class="projects-img"
+                    />
+                    <a href="#" target="_blank" class="projects-button">
+                      <i class="fa-solid fa-arrow-trend-up"></i>
+                    </a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="swiper-slide">
+                <article class="projects-card animate zoom-in delay-4">
+                  <div class="blob"></div>
+
+                  <div class="projects-number">
+                    <h1>04</h1>
+                    <h3>Web</h3>
+                  </div>
+
+                  <div class="projects-data">
+                    <h1 class="projects-title">Car Service System</h1>
+                    <p class="projects-subtitle">Stack used</p>
+                    <div class="projects-stack">
+                      <i class="devicon-csharp-plain colored csharp"></i>
+                      <i class="devicon-dot-net-plain dotnet"></i>
+                      <i class="devicon-microsoftsqlserver-plain sql-sms"></i>
+                    </div>
+                  </div>
+
+                  <div class="projects-image">
+                    <img
+                      src="project-img2.png"
+                      alt="dashbpard-ui"
+                      class="projects-img"
+                    />
+                    <a href="#" target="_blank" class="projects-button">
+                      <i class="fa-solid fa-arrow-trend-up"></i>
+                    </a>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <!===========================
+             SKILLS SECTION 
+      ============================>
+      <section class="skills-section" id="skills">
+        <h1 class="skills-title animate fade-up delay-1">My Skills</h1>
+
+        <div class="skills-box">
+          <div class="home-circle-animation2"></div>
+
+          <img
+            src="digital-brain.png"
+            alt="brain"
+            class="skils-image animate zoom-in delay-2"
+          />
+
+          <div class="frontend">
+            <h1 class="gradient animate fade-left delay-2">
+              Frontend <i class="fa-solid fa-file-code icon"></i>
+            </h1>
+            <p class="animate fade-left delay-3">
+              I build <span class="highlight">responsive</span> and
+              <span class="highlight">interactive</span>
+              user interfaces using
+              <span class="highlight">HTML, CSS, and JavaScript</span>. I work
+              with <span class="highlight">React</span> and
+              <span class="highlight">Tailwind CSS</span> to create
+              <span class="highlight">clean, modern designs</span> that deliver
+              <span class="highlight">smooth</span> and
+              <span class="highlight">engaging</span> user experiences across
+              all devices.
+            </p>
+          </div>
+
+          <div class="backend">
+            <h1 class="gradient animate fade-right delay-2">
+              Backend <i class="fa-solid fa-server icon"></i>
+            </h1>
+            <p class="animate fade-right delay-3">
+              I develop <span class="highlight">scalable</span> server-side
+              applications using <span class="highlight">Node.js</span> and
+              <span class="highlight">ExpressJS</span>. I design and manage
+              databases with <span class="highlight">PostgreSQL</span>, handle
+              <span class="highlight">REST APIs</span>, and ensure secure,
+              efficient data flow between the client and server.
+            </p>
+          </div>
+
+          <div
+            class="slider animate fade-up delay-5"
+            reverse="true"
+            style="--width: 100px; --height: 100px; --quantity: 9"
+          >
+            <div class="list">
+              <div class="item" style="--position: 1">
+                <i class="fa-brands fa-html5 html"></i>
+              </div>
+              <div class="item" style="--position: 2">
+                <i class="fa-brands fa-css3-alt css"></i>
+              </div>
+              <div class="item" style="--position: 3">
+                <i class="fa-brands fa-square-js js"></i>
+              </div>
+              <div class="item" style="--position: 4">
+                <i class="devicon-tailwindcss-plain tailwind"></i>
+              </div>
+              <div class="item" style="--position: 5">
+                <i class="fa-brands fa-react react"></i>
+              </div>
+              <div class="item" style="--position: 6">
+                <i class="fa-brands fa-node-js nodejs"></i>
+              </div>
+              <div class="item" style="--position: 7">
+                <i class="devicon-postgresql-plain postgrel"></i>
+              </div>
+              <div class="item" style="--position: 8">
+                <i class="fa-brands fa-git-alt git"></i>
+              </div>
+              <div class="item" style="--position: 9">
+                <i class="fa-brands fa-square-github github"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!===========================
+             CONTACT SECTION 
+      ============================>
+      <section class="contact-section" id="contact">
+        <h1 class="contact-title animate fade-up delay-1">Let's connect</h1>
+
+        <div class="social-box">
+          <a href="#" class="animate fade-left delay-2"
+            ><i class="fa-solid fa-square-phone telephone"></i> +66
+            97-026-3134</a
+          >
+          <a
+            href="mailto:lesterviloria1527@gmail.com"
+            class="animate fade-left delay-3"
+            ><i class="fa-solid fa-envelope email"></i>
+            lesterviloria1527@gmail.com</a
+          >
+          <a
+            href="www.linkedin.com/in/
+            mark-lester-viloria-67ba541bb"
+            class="animate fade-left delay-4"
+            ><i class="fa-brands fa-linkedin linkedin"></i> www.linkedin.com/in/
+            mark-lester-viloria-67ba541bb
+          </a>
+        </div>
+
+        <div class="social-icons animate fade-up delay-4">
+          <a href="https://www.facebook.com/lesterrific.v/"
+            ><i class="fa-brands fa-facebook facebook"></i
+          ></a>
+          <a href="https://www.instagram.com/lesterrr.v/"
+            ><i class="fa-brands fa-square-instagram instagram"></i
+          ></a>
+          <a href="https://www.threads.com/@lesterrr.v"
+            ><i class="fa-brands fa-square-threads threads"></i
+          ></a>
+        </div>
+
+        <div class="contact-box">
+          <p class="animate fade-right delay-2">
+            I'm available for freelance work and open to new opportunities. If
+            you have a project that needs clean code, great design, or both —
+            don't hesitate to reach out.
+          </p>
+          <form action="https://formspree.io/f/mvzdevkp" method="post">
+            <label for="full-name" class="animate fade-right delay-3"
+              >Full Name:
+            </label>
+            <input
+              type="text"
+              id="full-name"
+              name="full-name"
+              class="full-name animate fade-right delay-3"
+              placeholder="Your full name here..."
+            />
+            <label for="email" class="animate fade-right delay-4"
+              >Email:
+            </label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              class="email animate fade-right delay-4"
+              placeholder="Your email here..."
+            />
+            <label for="message" class="animate fade-right delay-5"
+              >Message:
+            </label>
+            <textarea
+              name="message"
+              id="message"
+              class="message animate fade-right delay-5"
+              placeholder="Your message here..."
+              rows="5"
+              cols="50"
+            ></textarea>
+
+            <button type="submit" class="animate fade-up delay-6">
+              Submit <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Mark Lester Viloria. All rights reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="project-carousel.js"></script>
+  </body>
+</html>
