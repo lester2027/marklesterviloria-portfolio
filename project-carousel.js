@@ -1,13 +1,14 @@
-document.addEventListener("DOMContentLoaded", function () {
-  // ===== SWIPER =====
+document.addEventListener("DOMContentLoaded", () => {
+  // ===== SWIPER FIXED =====
   const swiperProjects = new Swiper(".projects-swiper", {
     loop: true,
     spaceBetween: 24,
     grabCursor: true,
     slidesPerView: 1,
     breakpoints: {
-      768: { slidesPerView: 2, spaceBetween: 20 },
-      1024: { slidesPerView: 3, spaceBetween: 24 },
+      640: { slidesPerView: 1.2, spaceBetween: 20 },
+      768: { slidesPerView: 2, spaceBetween: 24 },
+      1024: { slidesPerView: 3, spaceBetween: 28 },
     },
     pagination: {
       el: ".swiper-pagination",
@@ -19,62 +20,48 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 
-  // ===== HAMBURGER =====
-  const hamburger = document.querySelector(".hamburger");
-  const nav = document.querySelector(".nav");
+  // ===== HAMBURGER MENU =====
+  const hamburger = document.getElementById("hamburger");
+  const navMenu = document.getElementById("nav-menu");
 
   hamburger.addEventListener("click", () => {
-    nav.classList.toggle("open");
+    navMenu.classList.toggle("open");
     hamburger.classList.toggle("open");
   });
 
-  nav.querySelectorAll("a").forEach((link) => {
+  document.querySelectorAll(".nav-item").forEach((link) => {
     link.addEventListener("click", () => {
+      navMenu.classList.remove("open");
       hamburger.classList.remove("open");
-      nav.classList.remove("open");
     });
   });
 
-  // ===== NAV LINK ACTIVE =====
+  // ===== NAV ACTIVE ON SCROLL =====
   const sections = document.querySelectorAll("section");
-  const navLinks = document.querySelectorAll(".nav-item");
-
-  const navObserver = new IntersectionObserver(
+  const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          navLinks.forEach((link) => link.classList.remove("active"));
-          const id = entry.target.getAttribute("id");
-          const activeLink = document.querySelector(`.nav-item[href="#${id}"]`);
-          if (activeLink) activeLink.classList.add("active");
-        }
+        const link = document.querySelector(
+          `.nav-item[href="#${entry.target.id}"]`,
+        );
+        if (link) link.classList.toggle("active", entry.isIntersecting);
       });
     },
-    { threshold: 0.4 },
+    { threshold: 0.5 },
   );
 
-  sections.forEach((section) => navObserver.observe(section));
+  sections.forEach((section) => observer.observe(section));
 
   // ===== SCROLL ANIMATIONS =====
-  const animatedElements = document.querySelectorAll(".animate");
-
-  console.log("Found animated elements:", animatedElements.length); // ← check this
-
-  const animationObserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      console.log(
-        "Observed:",
-        entry.target.className,
-        "isIntersecting:",
-        entry.isIntersecting,
+  const animated = document.querySelectorAll(".animate");
+  const animateObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) =>
+        entry.target.classList.toggle("visible", entry.isIntersecting),
       );
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
-      } else {
-        entry.target.classList.remove("visible");
-      }
-    });
-  });
+    },
+    { threshold: 0.15 },
+  );
 
-  animatedElements.forEach((el) => animationObserver.observe(el));
+  animated.forEach((el) => animateObserver.observe(el));
 });
