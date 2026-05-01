@@ -48,6 +48,27 @@ body {
   font-family: var(--font-poppins);
   padding-top: 80px;
 }
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+img,
+video,
+iframe {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.main-container,
+.about-me-container,
+.skills-section,
+.contact-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+}
 
 /* ==============================
              HEADER 
@@ -163,6 +184,7 @@ header {
   height: 100vh;
   gap: 15rem;
   margin: 1rem auto 0;
+  margin-top: 1.5rem;
   align-items: center;
   justify-content: space-evenly;
 }
@@ -1386,20 +1408,43 @@ footer p {
     overflow-x: hidden;
     width: 100%;
   }
-  header,
   main,
   #home,
   .main-container,
   .about-me-container,
-  .projects {
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
+  .skills-section,
+  .contact-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
   }
   img,
   video,
   iframe {
     max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: clamp(2rem, 4vw, 4rem) 1rem;
+    box-sizing: border-box;
+  }
+  h1,
+  h2,
+  h3,
+  p {
+    line-height: 1.4;
+  }
+  h1 {
+    font-size: clamp(1.8rem, 3vw, 3rem);
+  }
+  p {
+    font-size: clamp(0.9rem, 1.2vw, 1rem);
   }
 
   /* ========== HEADER ========== */
@@ -1998,6 +2043,42 @@ footer p {
     overflow-x: hidden;
     width: 100%;
   }
+  img,
+  video,
+  iframe {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: clamp(2rem, 4vw, 4rem) 1rem;
+    box-sizing: border-box;
+  }
+  .main-container,
+  .about-me-container,
+  .skills-section,
+  .contact-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  h1,
+  h2,
+  h3,
+  p {
+    line-height: 1.4;
+  }
+  h1 {
+    font-size: clamp(1.8rem, 3vw, 3rem);
+  }
+  p {
+    font-size: clamp(0.9rem, 1.2vw, 1rem);
+  }
 
   /* ========== HEADER ========== */
   .header-container {
@@ -2499,18 +2580,44 @@ footer p {
 @media (min-width: 481px) and (max-width: 768px) {
   html,
   body {
-    overflow-x: hidden;
     width: 100%;
+    overflow-x: hidden;
   }
-  #home,
+  img,
+  video,
+  iframe {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: clamp(2rem, 4vw, 4rem) 1rem;
+    box-sizing: border-box;
+  }
   .main-container,
   .about-me-container,
-  .projects,
   .skills-section,
   .contact-section {
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  h1,
+  h2,
+  h3,
+  p {
+    line-height: 1.4;
+  }
+  h1 {
+    font-size: clamp(1.8rem, 3vw, 3rem);
+  }
+  p {
+    font-size: clamp(0.9rem, 1.2vw, 1rem);
   }
 
   /* ========== HEADER ========== */
@@ -2978,18 +3085,44 @@ footer p {
 @media (min-width: 769px) and (max-width: 1024px) {
   html,
   body {
-    overflow-x: hidden;
     width: 100%;
+    overflow-x: hidden;
   }
-  #home,
+  img,
+  video,
+  iframe {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: clamp(2rem, 4vw, 4rem) 1rem;
+    box-sizing: border-box;
+  }
   .main-container,
   .about-me-container,
-  .projects,
   .skills-section,
   .contact-section {
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  h1,
+  h2,
+  h3,
+  p {
+    line-height: 1.4;
+  }
+  h1 {
+    font-size: clamp(1.8rem, 3vw, 3rem);
+  }
+  p {
+    font-size: clamp(0.9rem, 1.2vw, 1rem);
   }
 
   /* ========== HEADER ========== */
@@ -3411,21 +3544,48 @@ footer p {
 @media (min-width: 1025px) and (max-width: 1280px) {
   html,
   body {
-    overflow-x: hidden;
     width: 100%;
+    overflow-x: hidden;
   }
-  #home,
+  img,
+  video,
+  iframe {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: clamp(2rem, 4vw, 4rem) 1rem;
+    box-sizing: border-box;
+  }
   .main-container,
   .about-me-container,
   .projects,
   .skills-section,
   .contact-section {
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
   }
   .right-item {
     margin-left: 8rem;
+  }
+  h1,
+  h2,
+  h3,
+  p {
+    line-height: 1.4;
+  }
+  h1 {
+    font-size: clamp(1.8rem, 3vw, 3rem);
+  }
+  p {
+    font-size: clamp(0.9rem, 1.2vw, 1rem);
   }
 
   /* ========== HEADER ========== */
@@ -3467,7 +3627,7 @@ footer p {
   }
   .right-item {
     margin-bottom: 18rem;
-    margin-left: 10rem;
+    margin-left: 15rem;
   }
   .right-item h2 {
     font-size: 1.3rem;
@@ -3506,10 +3666,10 @@ footer p {
     margin-top: 15px;
   }
   .multicolumn {
-    height: 11rem;
+    height: 11.5rem;
   }
   .about-me-resume-btn a {
-    right: 30.2rem;
+    right: 26.5rem;
     bottom: -10rem;
   }
 
@@ -3517,9 +3677,18 @@ footer p {
   .projects {
     padding: 80px;
     margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2.5rem;
   }
   .section-title {
     font-size: 3rem;
+  }
+  .section-title::after {
+    display: block;
+    left: 0;
+    width: 100%;
   }
   .projects-container {
     max-width: 100%;
@@ -3557,7 +3726,7 @@ footer p {
   .home-circle-animation2 {
     width: 140px;
     height: 180px;
-    bottom: 8rem;
+    bottom: 6.5rem;
   }
 
   /* ========== CONTACT ========== */
@@ -3565,6 +3734,8 @@ footer p {
     padding: 8rem 10rem;
     height: auto;
     min-height: 100vh;
+    display: flex;
+    gap: 5rem;
   }
   .contact-title {
     font-size: 3rem;
@@ -3580,8 +3751,8 @@ footer p {
     word-break: break-word;
   }
   .social-icons {
-    right: 62%;
-    top: 60%;
+    right: 77%;
+    top: 62%;
   }
   .contact-box {
     width: 45%;
@@ -3604,10 +3775,23 @@ footer p {
 @media (min-width: 1281px) and (max-width: 1440px) {
   html,
   body {
-    overflow-x: hidden;
     width: 100%;
+    overflow-x: hidden;
   }
-  #home,
+  img,
+  video,
+  iframe {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: clamp(2rem, 4vw, 4rem) 1rem;
+    box-sizing: border-box;
+  }
   .main-container,
   .about-me-container,
   .projects,
@@ -3617,8 +3801,17 @@ footer p {
     max-width: 100%;
     overflow-x: hidden;
   }
-  .right-item {
-    margin-left: 14rem;
+  h1,
+  h2,
+  h3,
+  p {
+    line-height: 1.4;
+  }
+  h1 {
+    font-size: clamp(1.8rem, 3vw, 3rem);
+  }
+  p {
+    font-size: clamp(0.9rem, 1.2vw, 1rem);
   }
 
   /* ========== HEADER ========== */
@@ -3650,7 +3843,7 @@ footer p {
     height: 320px;
   }
   .right-item {
-    margin-left: 17rem;
+    margin-left: 14rem;
     margin-bottom: 23rem;
   }
   .right-item p {
@@ -3714,18 +3907,23 @@ footer p {
   /* ========== CONTACT ========== */
   .contact-section {
     padding: 10rem 22rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
   }
   .contact-title {
     left: 40%;
   }
   .social-icons {
-    right: 70%;
+    right: 68%;
   }
   .contact-box {
-    width: 42%;
+    width: 50%;
   }
   button {
-    right: 30%;
+    right: 24.5%;
     bottom: 15%;
   }
 }
