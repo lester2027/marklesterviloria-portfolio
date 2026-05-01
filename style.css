@@ -3927,3 +3927,203 @@ footer p {
     bottom: 15%;
   }
 }
+
+/* ================================
+   1640px - EXTRA LARGE SCREENS
+================================ */
+@media (min-width: 1441px) and (max-width: 1640px) {
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  section {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+  }
+  /* ========== HEADER ========== */
+  .header-container {
+    max-width: 1400px;
+    padding: 1.5rem 2.5rem;
+  }
+  .header-container ul {
+    gap: 4.5rem;
+  }
+  /* ========== HERO ========== */
+  #home {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  .main-container {
+    gap: 14rem;
+  }
+  .left-item > p {
+    font-size: 4.5rem;
+  }
+  .right-item p {
+    font-size: 4.5rem;
+  }
+  .image-box {
+    width: 42rem;
+    height: 48rem;
+  }
+  .home-circle-animation {
+    width: 320px;
+    height: 340px;
+    top: 24rem;
+  }
+  .right-item {
+    margin-left: 16rem;
+    margin-bottom: 24rem;
+  }
+  .resume-btn {
+    bottom: 13rem;
+    right: 6rem;
+    font-size: 1rem;
+  }
+  /* ========== ABOUT ME ========== */
+  .about-me-container {
+    max-width: 1400px;
+  }
+  .about-me-img {
+    width: 42rem;
+    height: 46rem;
+  }
+  .about-me-text-content {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+  .about-me-text-content h2,
+  .about-me-text-content h3,
+  .about-me-text-content p {
+    width: 100%;
+    margin: 0;
+  }
+  .about-me-text-content h2 {
+    font-size: 3.3rem;
+    line-height: 1.1;
+  }
+  .about-me-text-content h2::after {
+    display: block;
+    left: 0;
+    width: 100%;
+  }
+  .about-me-text-content h3 {
+    font-size: 3.3rem;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+  }
+  .about-me-text-content p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-top: 1.5rem;
+
+    column-count: 2;
+    column-gap: 2.5rem;
+    column-rule: 2px solid rgba(0, 255, 200, 0.3);
+    text-align: justify;
+    width: 100%;
+    max-width: 600px;
+  }
+  .about-me-circle-animation {
+    top: 35%;
+  }
+  .second-circle-animation {
+    top: 42%;
+    left: 30%;
+  }
+  .about-me-resume-btn a {
+    right: 31.5rem;
+  }
+  /* ========== PROJECTS ========== */
+  .projects {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 140px 2rem;
+  }
+  .section-title {
+    font-size: 3.2rem;
+  }
+  /* ========== SKILLS ========== */
+  .skills-section {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 120px 2rem;
+  }
+  .skils-image {
+    margin: 0 10rem;
+  }
+  .frontend {
+    left: 5%;
+    max-width: 330px;
+  }
+  .backend {
+    right: 5%;
+    max-width: 330px;
+  }
+  .gradient {
+    font-size: 2.5rem;
+  }
+  .slider {
+    width: 60%;
+  }
+  .home-circle-animation2 {
+    width: 180px;
+    height: 230px;
+    bottom: 6rem;
+  }
+  /* ========== CONTACT ========== */
+  .contact-section {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 8rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 5rem;
+    min-height: 100vh;
+  }
+  .contact-title {
+    font-size: 3.2rem;
+    text-align: center;
+  }
+  .contact-title::after {
+    display: block;
+    left: 0;
+  }
+  .contact-box input,
+  .contact-box textarea {
+    width: 100%;
+  }
+  .contact-box {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 15rem;
+  }
+  .social-box {
+    position: relative;
+    top: 18rem;
+    left: 7rem;
+  }
+  .social-icons {
+    position: absolute;
+    top: 55%;
+    left: 12.5%;
+  }
+  button {
+    width: 100%;
+    margin-top: 1rem;
+    position: static;
+  }
+  /* ========== FOOTER ========== */
+  footer p {
+    font-size: 0.7rem;
+  }
+}
